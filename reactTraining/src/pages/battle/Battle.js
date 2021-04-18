@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import axios from 'axios';
 import {
-    Row, Col, message, Button, Input, notification,Alert
+    Row, Col, message, Button, Input, notification
 } from 'antd';
 
 // eslint-disable-next-line no-unused-vars
