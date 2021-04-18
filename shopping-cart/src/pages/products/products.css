@@ -1,0 +1,139 @@
+
+
+.cardItem{
+    flex-direction: row;
+}
+
+.custom-image {
+    display: flex;
+    margin: 10px auto;
+}
+.custom-card {
+    padding: 10px 16px;
+}
+.custom-card p {
+    color: #999;
+}
+
+.size-button-select{
+    text-decoration: none;
+    min-width: 60px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: #fc5c01;
+}
+
+.size-button-unselect{
+    text-decoration: none;
+    min-width: 60px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 36px;
+    color:#333;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    border:1px solid #fc5c01;
+    background-color: #ffffff;
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+    transform:scale(1.05);
+    transition: all 0.5s;
+}
+
+.cardItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cartImg{
+    width: auto;
+    height: 80px;
+    border-radius: 12px;
+    margin-left: 10px;
+}
+
+.goPay{
+    text-decoration: none;
+    min-width: 80px;
+    margin: 10px 10px;
+    border-radius: 18px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: #fc5c01;
+}
+.goPayNo{
+    text-decoration: none;
+    min-width: 80px;
+    margin: 10px 10px;
+    border-radius: 18px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+.goPayNo:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.goPay:hover {
+    color: #fff;
+    text-decoration: none;
+    transform:scale(1.05);
+    transition: all 0.5s;
+}
+
+.deleteCart{
+    text-decoration: none;
+    min-width: 80px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    height: 36px;
+    color:red;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    border:1px solid red;
+    background-color: #ffffff;
+}
+
+.deleteCart:hover {
+    color: red;
+    text-decoration: none;
+    transform:scale(1.05);
+    transition: all 0.5s;
+}
+
+.cartConfig{
+    position: absolute;
+    height: 50px;
+    background-color: white;
+    width: 330px;
+    z-index: 999;
+    display: flex;
+    bottom:0px;
+    align-items: center;
+    justify-content: space-between;
+    border-top-color: #DCDCDC;
+    border-top-width: 1px;
+    border-top-style:solid;
+}
+
+/*a:focus{outline:none;}*/
