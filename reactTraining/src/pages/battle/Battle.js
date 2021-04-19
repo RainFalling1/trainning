@@ -9,7 +9,6 @@ import axios from "axios";
 import { Row, Col, Button, Input, notification } from "antd";
 
 // eslint-disable-next-line no-unused-vars
-
 class Battle extends React.Component {
   constructor(props) {
     super(props);
