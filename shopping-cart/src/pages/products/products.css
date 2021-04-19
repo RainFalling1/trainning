@@ -7,6 +7,8 @@
 .custom-image {
     display: flex;
     margin: 10px auto;
+    align-items: center;
+    justify-content: center;
 }
 .custom-card {
     padding: 10px 16px;

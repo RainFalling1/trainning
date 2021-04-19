@@ -134,25 +134,25 @@ return (
             {/*购物车*/}
             <CartDrawer openCart={openCart} setOpenCart={setOpenCart}/>
             {cartLogo()}
-            <Content style={{flexDirection: 'column', alignItems: 'center', display: 'flex'}}>
+            <div style={{flexDirection: 'column', alignItems: 'center', display: 'flex'}}>
                 {sizeButtonArea()}
                 {refresh ? (
                         <div style={{ textAlign: "center" }}>
                             <Spin />
                         </div>
                     ) :
-                <Row>
+                <div  style={{width:"100%",flexWrap:'wrap',flexDirection:'row',display:'flex',maxWidth:"1200px",justifyContent:'center'}}>
                     {productsList?.map((i, index) =>
                         // eslint-disable-next-line react/jsx-no-undef
-                        <Col xs={24} sm={12} md={8} lg={6}>
+                        // <Col xs={24} sm={12} md={8} lg={6}>
                             <ProductCard item={i}/>
-                       </Col>
+                       // </Col>
                     )}
 
-                </Row>
+                </div>
                 }
 
-            </Content>
+            </div>
 
         </Layout>
 

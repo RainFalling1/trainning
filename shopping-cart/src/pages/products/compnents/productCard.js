@@ -32,9 +32,9 @@ const ProductCard = ({item,cartsList,dispatch}) =>{
     );
 
     return(
-        <Card style={{ width: 240 ,margin:"10px auto"}} bodyStyle={{ padding: 0 }}>
+        <Card style={{ width: 240 ,margin:"10px 30px"}} bodyStyle={{ padding: 0 }}>
             <div className="custom-image">
-                <img alt="example" width="100%" src={`./data/img/products/${item.sku}_1.jpg`} />
+                <img alt="example" style={{width:"80%"}} src={`./data/img/products/${item.sku}_1.jpg`} />
             </div>
             <div className="custom-card">
                 <h4 style={{overflow:'hide',width:'100%'}}>{formatName(item.title)}</h4>
