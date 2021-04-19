@@ -56,11 +56,14 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "prettier --write ./src",
-      "eslint --ext .vue,.js,.jsx --fix ./src",
+    "src/**/*.{js,jsx,less}": [
+      "prettier --write",
       "git add"
-    ]
+    ],
+    "**/*.{js,jsx}": "eslint --ext .js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "devDependencies": {
     "glob": "^7.1.6"
