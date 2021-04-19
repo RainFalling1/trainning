@@ -4,9 +4,11 @@
  */
 
 const path = require('path');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin');
 
 
 module.exports = {
@@ -62,6 +64,8 @@ module.exports = {
                 minifyURLs: true,
             },
         }),
+        // 包体分析工具
+        new BundleAnalyzerPlugin()
         // v5.0.0版本已不支持这样
         // optimization.namedModules removed (NamedModulesPlugin too)
         // webpack5.x

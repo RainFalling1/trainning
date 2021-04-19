@@ -66,6 +66,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "glob": "^7.1.6"
+    "glob": "^7.1.6",
+    "webpack-bundle-analyzer": "^4.4.1"
   }
 }
