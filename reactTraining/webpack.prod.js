@@ -21,7 +21,9 @@ module.exports = {
     devtool: 'source-map',
     module: {
         rules: [
-            {test: /\.js$/, use: 'babel-loader'},
+            {
+                test: /\.js$/, use: 'babel-loader',
+            },
             {
                 test: /\.(css|less)$/,
                 // include: [path.resolve(__dirname,"src/styles"),/node_modules/],
@@ -72,6 +74,7 @@ module.exports = {
         // 在webpack5.x中，webpack.NamedModulesPlugin的功能已经内置
         // new webpack.NamedModulesPlugin(),
         // new webpack.HotModuleReplacementPlugin()
+        // ["import",{libraryName:"antd",style:}]
     ],
 
 

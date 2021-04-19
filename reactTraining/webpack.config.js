@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 
 
 module.exports = {
@@ -48,6 +50,8 @@ module.exports = {
             favicon: 'public/favicon.png',
             template: "./public/index.html",
         }),
+        // 包体分析工具
+        new BundleAnalyzerPlugin()
         // v5.0.0版本已不支持这样
         // optimization.namedModules removed (NamedModulesPlugin too)
         // webpack5.x
