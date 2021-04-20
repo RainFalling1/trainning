@@ -1,13 +1,12 @@
 .itemCard{
     background: rgba(0, 0, 0, 0.08);
-    margin: 10px auto;
+    margin: 10px 30px;
     boxSizing: 'content-box';
     flex-direction: column;
     display: flex;
     align-items: center;
     padding:10px 0;
     text-decoration: none;
-    width: 250px;
 }
 
 .itemCard:hover

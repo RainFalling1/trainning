@@ -121,9 +121,14 @@ export default class Popular extends React.Component {
             >
               {/* 卡片列表 */}
               {/* <div className={"listArea"}> */}
-              <Row type="flex" justify="center" align="center">
+              <Row
+                type="flex"
+                justify="center"
+                align="center"
+                style={{ maxWidth: "1200px" }}
+              >
                 {list.map((i, index) => (
-                  <Col xs={24} sm={12} md={8} lg={6} key={index}>
+                  <Col xs={18} sm={12} md={8} lg={6} key={index}>
                     <PopularCard item={i} key={i.id} index={index} />
                   </Col>
                 ))}
