@@ -7,7 +7,8 @@
     "dev": "webpack --mode development",
     "build": "webpack --config webpack.prod.js --mode production",
     "start": "webpack-dev-server --mode development",
-    "eslint": "npx eslint --fix src/"
+    "eslint": "npx eslint --fix src/",
+    "deploy": "npx gh-pages -d dist/ -e githubPage/"
   },
   "dependencies": {
     "@babel/cli": "^7.13.14",
@@ -31,6 +32,7 @@
     "eslint-plugin-react": "^7.23.2",
     "file-loader": "^6.2.0",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^5.3.1",
     "husky": "^4.2.5",
     "less": "^2.7.3",
