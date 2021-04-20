@@ -64,7 +64,7 @@ module.exports = {
 
     // 配置 webpack-dev-server
     devServer: {
-        port: 8888,
+        port: 8881,
         open: true,
         hot: true,
         openPage: '#/popular',
